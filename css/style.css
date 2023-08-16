@@ -69,20 +69,17 @@
   /* Estilos para telas menores ou iguais a 1080x2400 */
   @media (max-width: 1080px) and (max-height: 2400px) {
  
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+ 
       
       body {
-        margin: 0;
-        padding: 0;
+        width: 1080px;
+        height: 2400px;
         overflow-x: hidden;
+        overflow-y: hidden;
       }
       
       .wrapper {
-        padding: 50vh;
+        width: 100vh;
         position: relative;
         overflow: hidden;
       }
