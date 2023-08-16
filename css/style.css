@@ -1,51 +1,69 @@
+/*base da pagina*/
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; 
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .wrapper {
-    padding: 100%;
-    position: relative;
-    overflow: hidden;
+  padding: 100vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .MenuLateral {
-    width: 137px;
-    height: 100%;
-    background: #303030;
-    border: 1px solid #303030;
-    position: absolute;
-    top: 0;
-    left: 0;
+  width: 137px;
+  height: 100%;
+  background: #303030;
+  border: 1px solid #303030;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .menutop {
-    display: flex;
-    align-items: center;
-    width: calc(100% - 137px); 
-    height: 65px;
-    background: gray;
-    position: absolute;
-    top: 0;
-    left: 137px;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 137px);
+  height: 65px;
+  background: gray;
+  position: absolute;
+  top: 0;
+  left: 137px;
 }
 
 .page {
-    background-image: url("/svg/semfundo\ 1logo.svg");
-    background-size: cover; /* Ajustar o tamanho da imagem */
-    background-repeat: no-repeat; /* Evitar repetição da imagem */
-    background-position: center center; /* Centralizar a imagem */
-    position: absolute;
-    top: 65px; /* Deixar espaço para o menutop */
-    bottom: 0;
-    left: 137px; /* Deixar espaço para o MenuLateral */
-    right: 0;
+  position: absolute;
+  top: 65px;
+  bottom: 0;
+  left: 137px;
+  right: 0;
 }
 
+.fundo {
+  width: 100%;
+}
+
+/* elementos da pagina*/
+
+.pesquisa {
+  position: relative;
+  width: 319px;
+  height: 30px;
+  left: 2.04%;
+  border: 0;
+  border-radius: 16.957px;
+  background: #d9d9d9;
+  z-index: 1;
+}
+
+.lupa {
+  z-index: 2;
+}
