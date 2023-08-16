@@ -1,0 +1,33 @@
+.menus {
+    display: flex   ;
+    width: 100%;
+    color: white;
+}
+p {
+    font-size: 90%;
+    font-weight: 700;
+    font-family: sans-serif;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+p:hover {
+    color: gray;
+}
+
+.amenu {
+    margin-left: 3%;
+}
+
+.logo {
+    margin-right: 20%;
+}
+
+.caixa{
+    width: 30%;
+    height: 50%;
+    background-color: rgba(163, 163, 163, 0.5); 
+    border-radius: 10px; 
+    padding: 20px;
+    color: white;
+}
