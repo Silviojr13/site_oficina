@@ -13,7 +13,7 @@ body {
 }
 
 .wrapper {
-  padding: 100%;
+  padding: 100vh;
   position: relative;
   overflow: hidden;
 }
