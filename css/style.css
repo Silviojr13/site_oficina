@@ -1,33 +1,51 @@
-.menus {
-    display: flex   ;
-    width: 100%;
-    color: white;
-}
-p {
-    font-size: 90%;
-    font-weight: 700;
-    font-family: sans-serif;
-    transition: color 0.3s;
-    cursor: pointer;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-p:hover {
-    color: gray;
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
 }
 
-.amenu {
-    margin-left: 3%;
+.wrapper {
+    padding: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
-.logo {
-    margin-right: 20%;
+.MenuLateral {
+    width: 137px;
+    height: 100%;
+    background: #303030;
+    border: 1px solid #303030;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.caixa{
-    width: 30%;
-    height: 50%;
-    background-color: rgba(163, 163, 163, 0.5); 
-    border-radius: 10px; 
-    padding: 20px;
-    color: white;
+.menutop {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 137px); 
+    height: 65px;
+    background: gray;
+    position: absolute;
+    top: 0;
+    left: 137px;
 }
+
+.page {
+    background-image: url("/svg/semfundo\ 1logo.svg");
+    background-size: cover; /* Ajustar o tamanho da imagem */
+    background-repeat: no-repeat; /* Evitar repetição da imagem */
+    background-position: center center; /* Centralizar a imagem */
+    position: absolute;
+    top: 65px; /* Deixar espaço para o menutop */
+    bottom: 0;
+    left: 137px; /* Deixar espaço para o MenuLateral */
+    right: 0;
+}
+
